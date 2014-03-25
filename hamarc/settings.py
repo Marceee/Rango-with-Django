@@ -14,7 +14,7 @@ DATABASE_PATH = os.path.join(PROJECT_PATH, 'rango.db')
 SECRET_KEY = '*ef3ykx81fxgo*#*e$or3w*6v8o!7*e=te!dt&^hr0qy%o_@3@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
