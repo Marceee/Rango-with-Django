@@ -1,8 +1,8 @@
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+PROJECT_PATH = os.path.dirname(os.path.dirname(__file__))
 
-SETTINGS_DIR=os.path.dirname('/home/marcellinus/Documents/pycode/hamarc/hamarc/settings.py')
+SETTINGS_DIR=os.path.join(PROJECT_PATH,'settings.py')
 
 PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
@@ -16,7 +16,7 @@ SECRET_KEY = '*ef3ykx81fxgo*#*e$or3w*6v8o!7*e=te!dt&^hr0qy%o_@3@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -88,5 +88,5 @@ TEMPLATE_DIRS = (
     TEMPLATE_PATH,
     )
 
-LOGIN_URL = '/rango/login/'
+LOGIN_URL = '/rango/'
 
