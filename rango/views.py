@@ -225,7 +225,7 @@ def register(request):
 
 	return render_to_response('rango/register.html', context_dict, context)
 
-@login_required
+
 def user_login(request):
     context = RequestContext(request)
     cat_list = get_category_list()
